@@ -1,0 +1,131 @@
+
+body{
+    background-color: #26262d ;
+    height: 100%;
+    padding: 30px;
+    
+}
+h1{
+    font-family: 'Fjalla One', sans-serif;
+    color: #f7be16;
+    font-size: 200px;
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ec9b3b;
+    font-size: 200px;
+    padding: 0;
+    margin:0 ;
+}
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ec9b3b; 
+    font-size: 100px;
+}
+h4{
+    margin: 0px;
+    border: none;
+    padding: none;
+}
+p{
+    color: aliceblue;
+    font-size: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+.conteiner{
+   display: grid;
+   grid-template-columns: 5% 40% 55%;
+   width: 90%;
+   height: 1000px;
+   margin: auto;
+   font-size: 50px;
+   text-align: center;
+}
+.conteiner > div {
+    display: block;
+    padding: 5%;
+    width: auto;
+    
+}
+.conteiner__menu{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    color: aliceblue; 
+}
+div.conteiner__menu{
+    padding-top: 40%;
+}
+.conteiner__menu div {
+    border-bottom: solid rgb(117, 115, 115) 2px;
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+}
+.conteiner__menu  div i{
+    margin-bottom: 0;
+    padding: 0;
+    color: #f7be16;
+    font-size: 100px;
+    margin: none;
+}
+.conteiner__menu div:hover {
+
+ color: #f7be16;
+ 
+}
+
+.conteiner__main{
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 150px;
+    height: 100%;
+    box-shadow: 2px 2px 10px rgba(104, 102, 102, 0.5)
+}
+.conteiner__main--perfil{
+    width: 80%;
+    margin: 100px;
+    
+}
+.conteiner__main--perfil:hover{
+    content: url(../images/perfil\ oculto.png);
+    width: 80%;
+    margin: 100px;
+}
+.conteiner__main--redes{
+    font-size: 200px;
+    color: #ec9b3b;
+}
+.conteiner__information{
+text-align: initial;
+padding: 100px;
+}
+.conteiner__information--aboutme{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 30px;
+}
+.conteiner__information--aboutme  i{
+    color: aliceblue;
+    font-size: 200px;
+    margin: 15px;
+}
+.conteiner__information--tech img{
+    width: 900px;
+    height: 500px;
+    max-width: 5000px;
+}
+#css{
+    width: 500px;
+
+}
+.conteiner__information--tech-logos{
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 80px;
+}
