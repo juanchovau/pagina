@@ -56,15 +56,18 @@ p{
     flex-direction: column;
     margin: 10px;
     color: aliceblue; 
+   
 }
 div.conteiner__menu{
     padding-top: 40%;
+   
 }
 .conteiner__menu div {
     border-bottom: solid rgb(117, 115, 115) 2px;
     padding: 50px;
     text-align: center;
     align-items: center;
+    cursor: pointer;
 }
 .conteiner__menu  div i{
     margin-bottom: 0;
@@ -82,8 +85,9 @@ div.conteiner__menu{
 .conteiner__main{
     background-color: rgba(0,0,0,0.3);
     border-radius: 150px;
-    height: 100%;
-    box-shadow: 2px 2px 10px rgba(104, 102, 102, 0.5)
+    box-shadow: 2px 2px 10px rgba(104, 102, 102, 0.5);
+    max-height: 3000px;
+
 }
 .conteiner__main--perfil{
     width: 80%;
@@ -98,10 +102,15 @@ div.conteiner__menu{
 .conteiner__main--redes{
     font-size: 200px;
     color: #ec9b3b;
+    cursor: pointer;
+}
+.conteiner__main--redes i:hover{
+    color: #f7be16;
+    font-size: 230px;
 }
 .conteiner__information{
-text-align: initial;
-padding: 100px;
+    text-align: initial;
+    padding: 100px;
 }
 .conteiner__information--aboutme{
     display: grid;
@@ -123,9 +132,57 @@ padding: 100px;
 
 }
 .conteiner__information--tech-logos{
- width: 100%;
- display: flex;
- align-items: center;
- justify-content: center;
- padding: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+.conteiner__information--contact{
+    display: flex;
+    flex-direction: column;
+    border: #ec9b3b solid 2px;
+    padding: 100px 100px 200px 100px;
+    width: fit-content;
+    border-radius: 40px;
+    margin: 10% 40% 0% 40%;
+    background: rgba(236, 155, 59, 0.019);
+    text-align: center;
+}
+.conteiner__information--contact h3{
+    margin: 40px 0px;
+  
+}
+.conteiner__information--contact input{
+    max-width: 1500px;
+    height: 100px;
+    padding: 40px;
+    font-size: 70px;
+    font-family: 'Fjalla One', sans-serif;
+    color: aliceblue;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right:none ;
+    outline: none;
+}
+::placeholder{
+    color: rgba(239, 247, 255,0.8);
+}
+input:focus::placeholder{
+    color:transparent;
+}
+input.button{
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 20px 30px 20px 30px;
+    height: 150px;
+    margin-top: 80px;
+    background: #f7be16;
+    color: #885210;
+    cursor: pointer;
+}
+input.button:hover{
+    color: aliceblue;
+    background: #ec9b3b;
 }
